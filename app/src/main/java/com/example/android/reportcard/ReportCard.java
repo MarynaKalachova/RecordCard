@@ -14,7 +14,7 @@ public class ReportCard {
         this.grade = grade;
     }
 
-    public double getCourseCredit() {
+    public int getCourseCredit() {
         return courseCredit;
     }
 
@@ -34,14 +34,17 @@ public class ReportCard {
         this.grade = grade;
     }
 
-    public void setcourseCredit (int courseCredit){
+    public void setCourseCredit (int courseCredit){
         this.courseCredit = courseCredit;
     }
 
-    @Override
-    public String toString() {
-        return courseName + '\n' +
-               grade + '\n' +
-               courseCredit + '\n';
+    public String creditToString() {
+       String courseCredit = String.valueOf(this.courseCredit);
+       return courseCredit;
+    }
+
+    public String gradeToString() {
+        String courseGrade = String.valueOf(grade);
+        return courseGrade;
     }
 }
