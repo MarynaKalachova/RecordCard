@@ -37,4 +37,11 @@ public class ReportCard {
     public void setcourseCredit (double courseCredit){
         this.courseCredit = courseCredit;
     }
+
+    @Override
+    public String toString() {
+        return courseName + '\n' +
+               grade + '\n' +
+               courseCredit + '\n';
+    }
 }
