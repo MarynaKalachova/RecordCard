@@ -5,10 +5,10 @@ public class ReportCard {
 
     private char grade;
     private String courseName;
-    private double courseCredit;
+    private int courseCredit;
 
 
-    ReportCard(String courseName, double courseCredit, char grade){
+    ReportCard(String courseName, int courseCredit, char grade){
         this.courseName = courseName;
         this.courseCredit = courseCredit;
         this.grade = grade;
@@ -34,7 +34,7 @@ public class ReportCard {
         this.grade = grade;
     }
 
-    public void setcourseCredit (double courseCredit){
+    public void setcourseCredit (int courseCredit){
         this.courseCredit = courseCredit;
     }
 
