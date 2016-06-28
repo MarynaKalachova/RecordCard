@@ -22,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
         reportCards.add(new ReportCard("COMP 5461", 4, 'A'));
         reportCards.add(new ReportCard("COMP 5541", 4, 'A'));
         reportCards.add(new ReportCard("ENCS 5721", 4, 'A'));
+        reportCards.add(new ReportCard("COMP 5301", 4, 'B'));
+        reportCards.add(new ReportCard("SOEN 287", 4, 'B'));
+        reportCards.add(new ReportCard("SOEN 357", 4, 'A'));
+        reportCards.add(new ReportCard("SOEN 6011", 4, 'B'));
+        reportCards.add(new ReportCard("SOEN 498", 4, 'A'));
+        reportCards.add(new ReportCard("SOEN 6491", 4, 'B'));
 
         ReportCardAdapter cardAdapter = new ReportCardAdapter(this, reportCards);
         ListView listView = (ListView) findViewById(R.id.listview_reportcard);
