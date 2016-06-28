@@ -3,7 +3,6 @@ package com.example.android.reportcard;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
-
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 

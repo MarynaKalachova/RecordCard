@@ -6,9 +6,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
 
 /*
 * {@link AndroidFlavorAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
@@ -23,7 +21,7 @@ public class ReportCardAdapter extends ArrayAdapter<ReportCard> {
      * The context is used to inflate the layout file, and the List is the data we want
      * to populate into the lists
      *
-     * @param context        The current context. Used to inflate the layout file.
+     * @param context    The current context. Used to inflate the layout file.
      * @param reportCard A List of AndroidFlavor objects to display in a list
      */
     public ReportCardAdapter(Activity context, ArrayList<ReportCard> reportCard) {
@@ -37,14 +35,14 @@ public class ReportCardAdapter extends ArrayAdapter<ReportCard> {
      * @param position    The AdapterView position that is requesting a view
      * @param convertView The recycled view to populate.
      *                    (search online for "android view recycling" to learn more)
-     * @param parent The parent ViewGroup that is used for inflation.
+     * @param parent      The parent ViewGroup that is used for inflation.
      * @return The View for the position in the AdapterView.
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 

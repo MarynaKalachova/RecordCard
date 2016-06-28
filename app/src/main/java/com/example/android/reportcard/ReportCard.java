@@ -2,11 +2,9 @@ package com.example.android.reportcard;
 
 public class ReportCard {
 
-
     private char grade;
     private String courseName;
     private int courseCredit;
-
 
     ReportCard(String courseName, int courseCredit, char grade){
         this.courseName = courseName;
