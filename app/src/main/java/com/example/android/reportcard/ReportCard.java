@@ -36,13 +36,25 @@ public class ReportCard {
         this.courseCredit = courseCredit;
     }
 
+    //returns credit as a string
     public String creditToString() {
        String courseCredit = String.valueOf(this.courseCredit);
        return courseCredit;
     }
 
+    //returns grade as a string
     public String gradeToString() {
         String courseGrade = String.valueOf(grade);
         return courseGrade;
+    }
+
+    //returns the content of the class
+    @Override
+    public String toString() {
+        return "ReportCard{" +
+                "grade=" + grade +
+                ", courseName='" + courseName + '\'' +
+                ", courseCredit=" + courseCredit +
+                '}';
     }
 }
